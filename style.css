@@ -1,0 +1,230 @@
+body{
+    display: flex;
+}
+
+body div{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    background-color: rgba(251, 245, 245, 0.64);
+    padding: 3px 18px;
+}
+
+#card-container{
+    width: 2.5in;
+    height: 3.5in;
+    border: solid 1px;
+    display: grid;
+    grid-template-columns: 40px 40px 100px 20px 20px 20px;
+    grid-template-rows: 56px 100px 20px 120px 40px;
+    position: relative;
+    border: groove 4px #EAD020;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+#card-container div{
+    box-sizing: border-box;
+    overflow: hidden
+}
+
+.grid-span-col-6{
+    grid-column: span 6;
+}
+
+.grid-span-col-2{
+    grid-column: span 2;
+}
+
+.grid-span-col-3{
+    grid-column: span 3;
+}
+
+img{
+    width: 70%;
+}
+
+
+#card-container .bg-image{
+    position: absolute;
+    z-index: -1;
+}
+
+#card-container .bg-image img{
+    height: 3.5in;
+    width: 2.5in;  
+}
+
+#card-container .class{
+    background-color: rgba(251, 245, 245, 0.7);
+    padding: 0 4px;
+    margin-bottom: 0.5px;
+}
+
+#card-container .ability{
+    background-color: rgba(251, 245, 245, 0.64);
+    border-top-right-radius: 4px ;
+    padding: 0 4px;
+    font-family:'Times New Roman', Times, serif;
+}
+#card-container .level{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#card-container .level img{
+    position: absolute;
+    width: 70%;
+    bottom: 0;
+}
+
+#card-container .name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Algerian;
+    line-height: 18px;
+    font-size: 15px;
+    overflow: visible;
+}
+#card-container .name h2{
+    background-color: rgba(251, 245, 245, 0.64);
+    padding: 0 1px;
+    width: fit-content;
+    border-radius: 4px; 
+}
+
+#card-container .attribute{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-color: rgba(251, 245, 245, 0.64);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+#card-container .attribute.earth{
+    
+    background-image: url(img/Earth.png);
+   
+}
+#card-container .attribute.fire{
+    
+    background-image: url(img/Fire.png);
+   
+}
+#card-container .attribute.air{
+    
+    background-image: url(img/air.png);
+   
+}
+#card-container .attribute.water{
+    
+    background-image: url(img/Water.png);
+   
+}
+#card-container .attribute.dark{
+    
+    background-image: url(img/dark.png);
+   
+}
+#card-container .attribute.light{
+    
+    background-image: url(img/Light.png);
+   
+}
+#card-container .attribute.neutral{
+    
+    background-image: url(img/neutral.png);
+   
+}
+#card-container .position img{
+    width: 100%;
+    height: 48px;
+    background-color: rgba(251, 245, 245, 0.64);
+}
+
+#card-container .position{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#card-container .points{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(251, 245, 245, 0.64);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-weight: 900;
+}
+#card-container .summoning-crystal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#card-container .summoning-crystal img{
+    height: 95%;
+    width: 60%;
+}
+
+#card-container .summoning-crystal.displayNone{
+    display: none;
+}
+
+/* CSS */
+.button {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
